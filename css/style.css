@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400&display=swap');
+@font-face {
+    font-family: CosimaThin;
+    src: url('../Complementos/FONTS/CosimaTrial-Thin.otf') format('opentype');
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 18px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 35px;
+    background-color: #898989;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 35px;
+    background-color: rgb(41, 114, 224);
+}
+
+
+p{
+    color: rgb(255, 255, 255);
+    width: 100%;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+h1{
+    color: rgb(255, 255, 255);
+}
+#cabecalho{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../imgindex/landepage.png');
+    width: 100%;
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+}
+#cabecalho h1{
+    font-size: 45px;
+    text-align: center;
+    position: relative;
+    top: 35%;
+    font-family: 'CosimaThin';
+}
+.alert{
+    color: red;
+    font-size: 20px;
+}
+.listar{
+    background-color: rgba(14, 14, 17, 0.973);
+}
+.cad_anime{
+    background-image: linear-gradient(rgba(66, 66, 66, 0.651),rgba(54, 54, 54, 0.651)), url(../img/GOKU.gif);
+    background-size: 100% 100%;
+    background-repeat: no-repeat; 
+}
+.login{
+    background-image: linear-gradient(rgba(44, 44, 44, 0.651),rgba(66, 66, 66, 0.651)), url(../img/midoria.gif);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-position-x: left;
+}
+
+nav{
+    width: 100%;
+    height: 6em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+/* Pesquisar */
+
+#result{
+    display: block;
+}
+input[type=search]{
+    border-radius: 20px;
+    width: 470px;
+    height: 35px;
+    text-align: center;
+    font-size: 22px;
+    outline: none;
+}
+.pesquisar{
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 50px;
+ }
+ #fundopesquisar{
+    background-color: rgba(14, 14, 17, 0.973);
+}
+.pesq{
+    display: inline;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    text-align: center;
+}
+.pesq img{
+    border: 5px rgb(39, 37, 37) solid;
+    width: 400px;
+    height: 550px;
+    position: relative;
+    left: 50px;
+    top: 20px;
+    float: left;
+}
+.pesq h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    width: 650px;
+    position: relative;
+    padding-bottom: 20px;
+    top: 25px;
+}
+/* Input Type File*/
+input[type=file]{
+    border: none;
+}
+input[type=file]::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  input[type=file]::before {
+    content: 'Upload';
+    display: inline-block;
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+  }
+  input[type=file]:hover::before {
+    border-color: black;
+  }
+  input[type=file]:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+  }
+.links li{
+    font-weight: bold;
+    list-style-type: none;
+    display: inline-block;
+    padding: 0.5em 0.5em;
+    margin-right: 0.3em;
+    margin-top: 0.2em;
+    
+}
+.links a{
+    font-size: 20px;
+}
+.conteudo{
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.651),rgba(255, 255, 255, 0.651)), url(../img/goku-fight.gif);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+/* CADASTRO */
+
+.anime{
+    width: 420px;
+    margin: 80px auto 0px auto;
+    text-shadow: 
+               -1px -1px 0px rgb(0, 0, 0), 
+               -1px 1px 0px rgb(0, 0, 0),      
+                1px -1px 0px rgb(0, 0, 0),    
+                1px 1px 0px rgb(0, 0, 0);
+    text-align: center;
+}
+.anime input{
+    display: block;
+    border: 1px black solid;
+    border-radius: 30px;
+    width: 400px;
+    height: 55px;
+    background-color: transparent;
+    margin: 10px;
+    font-size: 16pt;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: white;
+    outline: none;
+}
+.anime input[type=submit]{
+    background-color: rgb(41, 114, 224);
+    border: none;
+    cursor: pointer;
+}
+::-webkit-input-placeholder{
+    color: white;
+}
+.cad{
+    font-size: 25px;
+    padding: 20px;
+}
+:placeholder-shown{
+    font-size: 15px;
+    color: white;
+}
+
+.logonav {
+    width: 15em;
+    height: 5em;
+    margin-left: 1em;
+    margin-top: 0.3em;
+}
+#nomelogin{
+    border: 1px 1px #000;
+}
+
+/* ID's */
+
+#Cadastrar{
+    font-weight: bold;   
+}
+.lista{
+    display: inline-table;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 12px;
+    padding-bottom: 12px;
+}
+.lista img{
+    width: 300px;
+    height: 450px;
+}
+.desc{
+    display: inline;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.desc img{
+    width: 400px;
+    height: 550px;
+    position: relative;
+    left: 50px;
+    top: 20px;
+    float: left;
+}
+.desc p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    width: 650px;
+    position: relative;
+    margin-left: 470px;
+    padding-bottom: 20px;
+    top: 25px;
+}
+.desc h1{
+    position: relative;
+    margin-left: 670px;
+    padding-bottom: 20px;
+    top: 25px;
+}
+.lol{
+    display: inline;
+}
+
+
+
+/* PÁGINA DE INÍCIO */
+
+.index{
+    margin: 0;
+    padding: 0;
+    background-size: 100% 100%;
+    background-color: rgba(14, 14, 17, 0.973);
+}
+.content{
+    height: 550px;
+    width: 1000px;
+    border-radius: 20px;
+    overflow: hidden;
+    position:absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 1012px) {
+    .content{
+        height: 60%;
+        width: 95%;
+        border-radius: 20px;
+        overflow: hidden;
+        position:absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: fill;
+    }
+}
+@media screen and (max-width: 484px){
+
+.links{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}.logonav{
+    width: 15em;
+
+}
+}
+    
+
+
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display:flex;
+}
+
+@media screen and (max-width: 1012px) {
+    .bar{
+        width: 60px;
+        height: 17px;
+        border: 2px solid #fff;
+        margin: 6px;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: 4s;
+    }
+}
+
+.bar:hover{
+    background-color: #fff;
+}
+.inputslide{
+    display: none;
+    margin-top: 200px;
+}
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+    
+}
+.slide{
+    width: 20%;
+    transition: 3s;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 1012px) {
+    .slide img{
+        width: 100%;
+        height: 100%;
+    }
+}
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+#slide2:checked ~ .s1{
+    margin-left: -20%;
+}
+#slide3:checked ~ .s1{
+    margin-left: -40%;
+}
+#slide4:checked ~ .s1{
+    margin-left: -60%;
+}
+#slide5:checked ~ .s1{
+    margin-left: -80%;
+}
+.index_animes{
+    display: block;
+    position: relative;
+}
+.index_animes p{
+    font-size: 25px;
+    font-family: 'CosimaThin';
+    text-align: center;
+}
+.recentes{
+    display: inline;
+    padding: 22px 0px 22px 22px;
+    
+}
+.recentes img{
+    width: 225px;
+    height: 350px;
+    border: 2px red;
+}
+.recentes img{
+    transition: 1s ease;
+}
+    
+.recentes img:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+.recentes img {
+    -webkit-filter: brightness(75%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+} 
+.recentes img:hover {
+    -webkit-filter: brightness(100%);
+}
+
+/* CAROUSEL */
+
+.gallery {
+    display: inline;
+    background: transparent;
+}
+.gallery-cell img{
+    width: 225px;
+    height: 350px;
+}
+.btn{
+    background: rgb(41, 114, 224);
+    border: none;
+    cursor: pointer;
+    display: inline;
+    border-radius: 30px;
+    width: 9%;
+    height: 6%;
+    margin: 0.7%;
+    font-size: 10% 5% 10%;
+    font-weight: bold;
+    padding: 0.8% 1%;
+    color: white;
+    outline: none;
+}
+.centro{
+    text-align: center;
+    position: relative;
+    right: 225px;
+    top: 30px;
+}
+hr{
+    margin: 25px;
+}
+
+/* Footer */
+.footer{
+    background:#000;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    margin-left: 15px;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+    }
+
+   
